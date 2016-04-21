@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea1fee525914154e6d6bbf071697b5a1",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "a092d5c76155697ae759d5f1b24267a7",
+    "content-hash": "c129ac1b8b4b245bb934cd83b5da5cf2",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -785,6 +785,56 @@
                 "random"
             ],
             "time": "2016-03-18 20:34:03"
+        },
+        {
+            "name": "pingpong/workbench",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pingpong-labs/workbench.git",
+                "reference": "01fc69f915b2596e50dfe8a15ef95f32ce4e67ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pingpong-labs/workbench/zipball/01fc69f915b2596e50dfe8a15ef95f32ce4e67ab",
+                "reference": "01fc69f915b2596e50dfe8a15ef95f32ce4e67ab",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "5.2.*",
+                "illuminate/support": "5.2.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "illuminate/console": "5.2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pingpong\\Workbench\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pingpong Labs",
+                    "email": "pingpong.labs@gmail.com"
+                },
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Workbench.",
+            "time": "2016-01-04 05:01:38"
         },
         {
             "name": "psr/log",

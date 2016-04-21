@@ -32,3 +32,8 @@ $compiledPath = __DIR__.'/cache/compiled.php';
 if (file_exists($compiledPath)) {
     require $compiledPath;
 }
+
+if (is_dir($workbench = __DIR__.'/../workbench'))
+{
+    Pingpong\Workbench\Starter::start($workbench);
+}
