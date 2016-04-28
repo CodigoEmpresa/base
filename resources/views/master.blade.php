@@ -11,12 +11,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-      <link rel="icon" href="Img/idrd_icon.ico">    
-      <link rel="stylesheet" href="public/Css/bootstrap.min.css" media="screen">    
-      <link rel="stylesheet" href="public/Css/sticky-footer.css" media="screen">    
+      <link rel="icon" href="{{ asset('public/Img/idrd_icon.ico') }}">    
+      <link rel="stylesheet" href="{{ asset('public/Css/jquery-ui.css') }}" media="screen">    
+      <link rel="stylesheet" href="{{ asset('public/Css/bootstrap.min.css') }}" media="screen">    
+      <link rel="stylesheet" href="{{ asset('public/Css/sticky-footer.css') }}" media="screen">    
       <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-      <script src="public/Js/jquery.js"></script>
-      <script src="public/Js/bootstrap.min.js"></script>
+      <script src="{{ asset('public/Js/jquery.js') }}"></script>
+      <script src="{{ asset('public/Js/jquery-ui.js') }}"></script>
+      <script src="{{ asset('public/Js/bootstrap.min.js') }}"></script>
 
       <title>Nombre Módulo</title>
   </head>
@@ -101,22 +103,30 @@
 
       <!-- Contenedor panel principal -->
       <div class="container">
-          <div class="panel panel-default">
-                <div class="panel-body">
-                   @yield('content')   
-                </div>
-          </div>
+          @yield('content')
       </div>        
       <!-- FIN Contenedor panel principal -->
+      <script type="text/javascript">
+          $(function(){
+              $('input[data-role="datepicker"]').datepicker({
+                  dateFormat: 'yy-mm-dd',
+                  yearRange: "-100:+0",
+                  changeMonth: true,
+                  changeYear: true,
+              });
 
-      <footer class="footer">          
-          <div class="container">
-                         
-          </div>
-      </footer>          
-   
-      <script src="Js/jquery-1.10.2.min.js"></script>
-      <script src="Js/bootstrap.min.js"></script>
+              $('select').each(function(i, e){
+                  if ($(this).attr('data-value'))
+                  {
+                      if ($.trim($(this).data('value')) !== '')
+                      {
+                          var dato = $(this).data('value');
+                          $(this).val(dato);
+                      }
+                  }
+              });
+          });
+      </script>
   </body>
 
 </html>
