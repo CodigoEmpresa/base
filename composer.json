@@ -6,7 +6,8 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "idrd/usuarios": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -21,8 +22,7 @@
             "database"
         ],
         "psr-4": {
-            "App\\": "app/",
-            "Idrd\\Usuarios\\": "modulos/idrd/usuarios/src/Idrd/Usuarios"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {

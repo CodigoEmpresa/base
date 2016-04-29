@@ -19,7 +19,7 @@ Route::get('uno', function () {
     return 'welcome';
 });
 
-/*
+
 Route::get('/personas', '\Idrd\Usuarios\Controllers\PersonaController@index');
 
 Route::get('/personas/service/obtener/{id}', '\Idrd\Usuarios\Controllers\PersonaController@obtener');
