@@ -4,6 +4,7 @@
   "main": "",
   "license": "MIT",
   "homepage": "https://github.com/hjonac/ModuloRecreovia",
+  "componentsDirectory": "public/",
   "ignore": [
     "**/.*",
     "node_modules",
